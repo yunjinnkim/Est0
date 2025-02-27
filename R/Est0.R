@@ -1,5 +1,5 @@
 Est0<-function(train0){
-
+  use_package("survival")
   ###### Right censored data for cure rate model ############################
 
   cens=train0$cens
@@ -13,7 +13,7 @@ Est0<-function(train0){
   fit1<-glm(ys0~z1+z2+z3, data=train0, family=binomial)
   y0<-fit1$fitted
 
-  fit0<-survfit(Surv(TT,cens)~1, data=train0)
+  fit0<-survival:survfit(Surv(TT,cens)~1, data=train0)
   ss=ipred::getsurv(fit0,TT)
   tm<-fit0$time; m=length(tm)
   delta=cens
