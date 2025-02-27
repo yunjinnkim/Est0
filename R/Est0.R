@@ -1,5 +1,5 @@
 Est0<-function(train0){
-  use_package("survival")
+#  use_package("survival")
   ###### Right censored data for cure rate model ############################
 
   cens=train0$cens
