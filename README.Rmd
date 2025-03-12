@@ -33,12 +33,13 @@ You can install the development version of Est0 like so:
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-use_package("survival")
-load_all()
-library(Est0)
 ## basic example code
-#test22 <- read.table(file = "inst/extdata/test22.txt")
-Est0(test22)
+library(devtools)
+#use_package("survival")
+load_all()
+
+library(Est0)
+Est0(my_data)
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
