@@ -35,11 +35,11 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 ## basic example code
 library(devtools)
-#use_package("survival")
+
 load_all()
 
 library(Est0)
-Est0(my_data)
+Est0(est0_data1)
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
