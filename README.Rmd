@@ -34,9 +34,9 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 ## basic example code
-library(devtools)
+# library(devtools)
 
-load_all()
+# load_all()
 
 library(Est0)
 Est0(est0_data1)
